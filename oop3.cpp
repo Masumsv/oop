@@ -3,12 +3,12 @@ using namespace std;
 
 template<typename T>
 class parent {
-protected
+protected:
       virtual T Add(T a, T b) {
         return a + b;
     }
 };
-classs child:parent<int> {
+class child:parent<int> {
     public:
      int Add(int a, int b) override {
            int c = parent<int>::Add(5, 10);
@@ -20,3 +20,4 @@ int main() {
     int result = obj.Add(3, 4);
     cout << "Result: " << result << endl;
     return 0;
+}
