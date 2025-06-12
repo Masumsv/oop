@@ -1,13 +1,14 @@
 #include <iostream>
+using namespace std;
 
 class Benz {
 public:
     bool startEngine() {
         if (startElectronicServices() && startLightSystem()) {
-            std::cout << "Engine started successfully." << std::endl;
+           cout << "Engine started successfully." << endl;
             return true;
         } else {
-            std::cout << "Failed to start engine." << std::endl;
+            cout << "Failed to start engine." << endl;
             return false;
         }
     }
@@ -15,12 +16,12 @@ private:
 
     bool startElectronicServices() {
        
-        std::cout << "Electronic services started." << std::endl;
+        cout << "Electronic services started." << endl;
         return true;   
     }
     bool startLightSystem() {
        
-        std::cout << "Light system started." << std::endl;
+        cout << "Light system started." << endl;
         return true;  
     }
 };
